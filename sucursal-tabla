@@ -1,0 +1,22 @@
+Estructura de tabla para la tabla `sucursal`
+--
+
+CREATE TABLE `sucursal` (
+  `idSucursal` int(11) NOT NULL,
+  `nombreSucursal` varchar(30) NOT NULL,
+  `direccionSucursal` varchar(50) NOT NULL,
+  `comunaSucursal` varchar(50) NOT NULL,
+  `telefonoSucursal` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `sucursal`
+--
+
+INSERT INTO `sucursal` (`idSucursal`, `nombreSucursal`, `direccionSucursal`, `comunaSucursal`, `telefonoSucursal`) VALUES
+(1, 'Bandera', 'Bandera 444', 'Santiago', '56228570011'),
+(2, 'Libertad', 'Av. Libertad 543', 'Viña del Mar', '563231567924'),
+(3, 'Pedro Montt', 'Av. Pedro Montt 3214', 'Valparaíso', '563232569931'),
+(4, 'Pedro de Valdivia', 'Av. Pedro de Valdivia 443', 'Providencia', '56277664521'),
+(5, 'Freire', 'Freire 534', 'San Bernardo', '56264537167'),
+(6, 'Independencia', 'Paseo Independencia 24', 'Rancagua', '727261435900');
