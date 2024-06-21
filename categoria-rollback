@@ -1,0 +1,6 @@
+Volcado de datos para la tabla `categoria_colaborador`
+--
+
+INSERT INTO `categoria_colaborador` (`idCategoria`, `nombreCategoriaColaborador`, `responsabilidadCategoriaColaborador`) VALUES
+(1, 'Vendedor', 'Se encargará de las ventas'),
+(2, 'Jefe de sucursal', 'Podrá vender y gestionar tienda');
