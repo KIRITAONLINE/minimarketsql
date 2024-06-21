@@ -1,0 +1,58 @@
+ Estructura de tabla para la tabla `producto`
+--
+
+CREATE TABLE `producto` (
+  `idProducto` int(11) NOT NULL,
+  `nombreProducto` varchar(30) NOT NULL,
+  `descripcionProducto` varchar(100) DEFAULT NULL,
+  `precioProducto` int(11) NOT NULL,
+  `FK_idCategoriaProducto` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `producto`
+--
+
+INSERT INTO `producto` (`idProducto`, `nombreProducto`, `descripcionProducto`, `precioProducto`, `FK_idCategoriaProducto`) VALUES
+(1, 'Marraqueta kg', 'Pan panadería', 1200, 1),
+(2, 'Hallulla Kg', 'Pan panadería', 1200, 1),
+(3, 'Pan de molde Ideal 750gr', NULL, 2200, 1),
+(4, 'Pan de molde Castaño 750gr', NULL, 2250, 1),
+(5, 'Galletas de soda 75grs', 'presentación persona', 600, 1),
+(6, '1+1 zucaritas', 'yougurt con cereal', 700, 1),
+(7, '1+1 chocapic', 'yougurt con cereal', 700, 1),
+(8, 'Cerealbar choco', NULL, 300, 1),
+(9, 'Atún aceite', '380gr', 1000, 1),
+(10, 'Atún agua', '380gr', 1000, 1),
+(11, 'Cocacola 500 ml', NULL, 1000, 2),
+(12, 'Agua mineral Vital c/g 600 ml ', 'con gas', 800, 2),
+(13, 'Agua mineral Vital s/g 600  ml', 'sin gas', 800, 2),
+(14, 'Jugo Watts frutilla 400cc', NULL, 800, 2),
+(15, 'Jugo Watts durazno 400cc', NULL, 800, 2),
+(16, 'Powerade blue', NULL, 1200, 2),
+(17, 'Powerade naranja', NULL, 1200, 2),
+(18, 'Agua mineral Vital 1.5L', 'con gas', 1300, 2),
+(19, 'Agua mineral Vital 1.5 s/g', 'sin gas', 1300, 2),
+(20, 'Jugo Watt 1.5L', NULL, 1300, 2),
+(21, 'Desodorante Nivea Women', 'Spray', 2000, 3),
+(22, 'Desodorante Nivea Men', 'Spray', 2000, 3),
+(23, 'Jabón líquido Ballerina800ml', NULL, 2300, 3),
+(24, 'Jabón Dove barra 50 gr', 'barra', 1000, 3),
+(25, 'Paste de dientes Pepsodent', '120 grs', 1600, 3),
+(26, '4 rollos papel higienico', 'Confort', 1200, 3),
+(27, 'Prestobarba Gillette', '3 hojas', 1200, 3),
+(28, 'Crema de afeitar Gillettte', NULL, 3450, 3),
+(29, 'Shampoo Head Soulders', NULL, 3000, 3),
+(30, 'Shampoo Tio Nacho', 'Engrosador', 7000, 3),
+(31, 'Cepillo de dientes Oral B', NULL, 1500, 4),
+(32, 'Peineta pelo', 'pequeña', 500, 4),
+(33, 'Peineta grande', NULL, 2000, 4),
+(34, 'Cepillo de pelo', NULL, 3500, 4),
+(35, 'helado simple', 'un sabor artesanal', 2000, 4),
+(36, 'helado doble', 'segundo sabor artesanal', 300, 4),
+(37, 'helado triple', 'triple sabor artesanal', 4000, 4),
+(38, 'Papas fritas sal de mar', '380 grs', 3000, 4),
+(39, 'Mani salado 300 grs', NULL, 2000, 4),
+(40, 'Mani japones 300 grs', NULL, 4000, 4);
+
+-- --------------------------------------------------------
