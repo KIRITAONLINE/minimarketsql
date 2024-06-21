@@ -1,0 +1,35 @@
+import com.stripe.Stripe;
+import com.stripe.exception.StripeException;
+import com.stripe.model.PaymentIntent;
+import com.stripe.param.PaymentIntentCreateParams;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@RestController
+@RequestMapping("/api/payments")
+public class PaymentController {
+
+    public PaymentController() {
+        Stripe.apiKey = "your-secret-key"; // Replace with your Stripe secret key
+    }
+
+    @PostMapping("/create-payment-intent")
+    public Map<String, Object> createPaymentIntent(@RequestBody Map<String, Object> data) {
+        Map<String, Object> response = new HashMap<>();
+        try {
+            PaymentIntentCreateParams params = PaymentIntentCreateParams.builder()
+                    .setAmount(1000L) // Amount in cents (e.g., $10.00)
+                    .setCurrency("usd")
+                    .setPaymentMethod(data.get("paymentMethodId").toString())
+                    .setConfirm(true) // Confirm the payment at the time of creation
+                    .build();
+            PaymentIntent intent = PaymentIntent.create(params);
+            response.put("clientSecret", intent.getClientSecret());
+        } catch (StripeException e) {
+            response.put("error", e.getMessage());
+        }
+        return response;
+    }
+}
