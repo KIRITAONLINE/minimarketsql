@@ -1,0 +1,8 @@
+Volcado de datos para la tabla `categoria_producto`
+--
+
+INSERT INTO `categoria_producto` (`idCategoriaProducto`, `nombreCategoriaProducto`, `descripcionCategoriaProducto`) VALUES
+(1, 'Alimentos', 'pan, galletas, cereales, enlatados, productos lácteos, embutidos, verduras y frutas'),
+(2, 'Bebidas', 'aguas, refrescos, jugos, cerveza y vino'),
+(3, 'Artículos de higiene y limpieza', 'jabón, shampoo, pasta de dientes, papel higiénico, desodorante, detergente'),
+(4, 'Otros', 'pastillas sin prescripción médica, velas, cepillos y peines, snacks salados, helados');
