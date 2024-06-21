@@ -1,0 +1,16 @@
+Estructura de tabla para la tabla `administrador`
+--
+
+CREATE TABLE `administrador` (
+  `idAdministrador` int(11) NOT NULL,
+  `nombreAdministrador` varchar(25) NOT NULL,
+  `primerApellidoAdministrador` varchar(25) NOT NULL,
+  `segundoApellidoAdministrador` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `administrador`
+--
+
+INSERT INTO `administrador` (`idAdministrador`, `nombreAdministrador`, `primerApellidoAdministrador`, `segundoApellidoAdministrador`) VALUES
+(1, 'Juan', 'Mora', 'Rios');
