@@ -1,0 +1,43 @@
+Estructura de tabla para la tabla `sucursal_colaborador`
+--
+
+CREATE TABLE `sucursal_colaborador` (
+  `FK_rutColaborador` varchar(15) NOT NULL,
+  `FK_idSucursal` int(11) NOT NULL,
+  `FK_idAdministrador` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `sucursal_colaborador`
+--
+
+INSERT INTO `sucursal_colaborador` (`FK_rutColaborador`, `FK_idSucursal`, `FK_idAdministrador`) VALUES
+('10273890-4', 1, 1),
+('10344187-1', 2, 1),
+('11322645-8', 3, 1),
+('11444745-5', 4, 1),
+('12345678-2', 5, 1),
+('12345678-8', 6, 1),
+('12566432-k', 1, 1),
+('13579246-4', 2, 1),
+('13579247-1', 3, 1),
+('13579248-9', 4, 1),
+('14647213-1', 5, 1),
+('15272638-6', 6, 1),
+('15432128-k', 1, 1),
+('16435288-9', 2, 1),
+('17253789-4', 3, 1),
+('17543218-0', 4, 1),
+('17736903-7', 5, 1),
+('18224986-1', 6, 1),
+('18929264-3', 1, 1),
+('19245889-3', 2, 1),
+('20337842-5', 3, 1),
+('21726389-6', 4, 1),
+('22362890-4', 5, 1),
+('22456231-9', 6, 1),
+('23625583-7', 1, 1),
+('23754210-8', 2, 1),
+('24681357-5', 3, 1),
+('24681359-7', 4, 1),
+('25432189-6', 5, 1);
