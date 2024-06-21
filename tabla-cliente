@@ -1,0 +1,43 @@
+CREATE TABLE `cliente` (
+  `rutCliente` varchar(15) NOT NULL,
+  `nombreCliente` varchar(30) NOT NULL,
+  `primerApellidoCliente` varchar(35) NOT NULL,
+  `segundoApellidoCliente` varchar(35) NOT NULL,
+  `direccionCliente` varchar(60) NOT NULL,
+  `comunaCliente` varchar(50) NOT NULL,
+  `telefonoCliente` varchar(15) NOT NULL,
+  `e-mailCliente` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `cliente`
+--
+
+INSERT INTO `cliente` (`rutCliente`, `nombreCliente`, `primerApellidoCliente`, `segundoApellidoCliente`, `direccionCliente`, `comunaCliente`, `telefonoCliente`, `e-mailCliente`) VALUES
+('10334538-5', 'Manuel', 'López', 'Vega', 'Bartolina Madrid 456', 'Alhue', '56928194697', 'mdzpikgw@galpc.gov'),
+('11334539-3', 'Pedro', 'Pérez', 'Fuentes', 'Atanasio Pardo Vega 456', 'Buin', '56857891816', 'txgtztuk@nf'),
+('11334544-0', 'Gabriel', 'Rivera', 'Paredes', 'General Holley 456', 'Providencia', '56992447986', 'ulaszhtp@hdnyr.com'),
+('13334533-8', 'José', 'García', 'Cabrera', 'Avenida Libertador Bernardo O’Higgins 78.', 'Santiago', '56831370737', 'sualfnhi@ktlev.org'),
+('13334537-4', 'Antonio', 'Martínez', 'Rojas', 'Calle Monjitas 445', 'Santiago', '56928508276', 'othwgrhx@orlyi.com'),
+('14334549-4', 'Emilio', 'Reyes', 'Castro', 'Gonzales 465', 'Valparaiso', '56822800545', 'hyzqkwzc@hffiu.edu'),
+('16334535-6', 'Carlos', 'González', 'Valenzuela', 'Independencia 48.', 'Independencia', '56965263445', 'mcklwcsp@ffbye.com'),
+('16334553-5', 'Isabel', 'Ramos', 'Guzmán', 'Arlegui 655', 'Viña del Mar', '56992447986', 'fovtlqwf@lzuip.org'),
+('17334542-3', 'Diego', 'Torres', 'Miranda', 'General Cruz 345', 'Valparaiso', '56850707741', 'hyzqkwzc@hffiu.edu'),
+('18334536-k', 'Luis', 'Rodríguez', 'Mendoza', 'Paseo Bulnes 24', 'Santiago', '56942615908', 'tyawmyrv@ffexq.edu'),
+('18334541-4', 'Rafael', 'Ramírez', 'Salazar', '12 Norte 223', 'Viña del Mar', '56992447986', 'vkixlwuy@yrpal.edu'),
+('18334548-5', 'Daniel', 'Morales', 'Vargas', 'O\'Connel 456', 'Rancagua', '56850707741', 'vkixlwuy@yrpal.edu'),
+('18334550-2', 'Hugo', 'Gutiérrez', 'Leiva', 'San Francisco 445', 'Santiago', '56992447986', 'gxdgzjxg@bcnic.com'),
+('19334554-4', 'Valentina', 'Ruiz', 'Pizarro', 'Alcazar 55', 'Rancagua', '56850707741', 'qyqjvqo@mdsjs.org'),
+('20334545-5', 'Joaquín', 'Gómez', 'Silva', '21 de mayo 432', 'San Bernardo', '56850707741', 'kbpwnpmj@sfcvr.com'),
+('21334555-2', 'Camila', 'Mendoza', 'Escobar', 'Segers 231', 'Rancagua', '56822800545', 'vkixlwuy@yrpal.edu'),
+('22334547-3', 'Santiago', 'Cruz', 'Ortega', '21 De Mayo', 'Alhue', '56992447986', 'qyqjvqo@mdsjs.org'),
+('22334556-7', 'Lucía', 'Alvarez', 'Cáceres', 'Las Dalias 201', 'El Bosque', '56992447986', 'hyzqkwzc@hffiu.edu'),
+('22344534-5', 'Juan', 'Hernández', 'Santana', 'Avenida Brasil 67.', 'Valparaiso', '56888614692', 'goxkjubc@yhrkz.com'),
+('23334557-3', 'Renata', 'Jiménez', 'Lira', 'Olivares 432', 'Maipu', '56850707741', 'gxdgzjxg@bcnic.com'),
+('24334558-6', 'Cecilia', 'Castillo', 'Zúñiga', 'Av. Los Leones 759', 'Providencia', '56822800545', 'ulaszhtp@hdnyr.com'),
+('25334546-4', 'Mateo', 'Díaz', 'Araya', '2 Norte 234', 'Viña del Mar', '56822800545', 'fovtlqwf@lzuip.org'),
+('5334552-7', 'Nicolás', 'Chávez', 'Muñoz', 'Av. America 3452', 'San Bernardo', '56822800545', 'kbpwnpmj@sfcvr.com'),
+('6334543-2', 'Andrés', 'Flores', 'Navarro', 'Amunategui 65', 'Santiago', '56822800545', 'gxdgzjxg@bcnic.com'),
+('8334540-1', 'Fernando', 'Sánchez', 'Cortés', 'Freire 146.', 'San Bernardo', '568945080', 'gqyqjvqo@mdsjs.org'),
+('9334551-k', 'Rodrigo', 'Ortiz', 'Sepúlveda', 'Silvina Hurtado 2345', 'Providencia', '56850707741', 'ulaszhtp@hdnyr.com');
+
