@@ -1,0 +1,39 @@
+Filtros para la tabla `colaborador`
+--
+ALTER TABLE `colaborador`
+  ADD CONSTRAINT `colaborador_ibfk_1` FOREIGN KEY (`FK_idCategoria`) REFERENCES `categoria_colaborador` (`idCategoria`);
+
+--
+-- Filtros para la tabla `producto`
+--
+ALTER TABLE `producto`
+  ADD CONSTRAINT `producto_ibfk_1` FOREIGN KEY (`FK_idCategoriaProducto`) REFERENCES `categoria_producto` (`idCategoriaProducto`);
+
+--
+-- Filtros para la tabla `stock`
+--
+ALTER TABLE `stock`
+  ADD CONSTRAINT `stock_ibfk_1` FOREIGN KEY (`FK_idProducto`) REFERENCES `producto` (`idProducto`),
+  ADD CONSTRAINT `stock_ibfk_2` FOREIGN KEY (`FK_idSucursal`) REFERENCES `sucursal` (`idSucursal`),
+  ADD CONSTRAINT `stock_ibfk_3` FOREIGN KEY (`FK_idAdministrador`) REFERENCES `administrador` (`idAdministrador`);
+
+--
+-- Filtros para la tabla `sucursal_colaborador`
+--
+ALTER TABLE `sucursal_colaborador`
+  ADD CONSTRAINT `sucursal_colaborador_ibfk_1` FOREIGN KEY (`FK_rutColaborador`) REFERENCES `colaborador` (`rutColaborador`),
+  ADD CONSTRAINT `sucursal_colaborador_ibfk_2` FOREIGN KEY (`FK_idSucursal`) REFERENCES `sucursal` (`idSucursal`),
+  ADD CONSTRAINT `sucursal_colaborador_ibfk_3` FOREIGN KEY (`FK_idAdministrador`) REFERENCES `administrador` (`idAdministrador`);
+
+--
+-- Filtros para la tabla `venta`
+--
+ALTER TABLE `venta`
+  ADD CONSTRAINT `venta_ibfk_1` FOREIGN KEY (`FK_idSucursal`) REFERENCES `sucursal` (`idSucursal`),
+  ADD CONSTRAINT `venta_ibfk_2` FOREIGN KEY (`FK_idAdministrador`) REFERENCES `administrador` (`idAdministrador`),
+  ADD CONSTRAINT `venta_ibfk_3` FOREIGN KEY (`FK_rutCliente`) REFERENCES `cliente` (`rutCliente`);
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
